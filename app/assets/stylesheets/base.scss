@@ -15,7 +15,7 @@ html {
   box-sizing:  border-box;
   font-family: $font;
   font-size:   $font-size;
-  //line-height: 1.5;
+  line-height: 1;
 }
 
 *,
@@ -33,7 +33,7 @@ body {
   padding:          15px;
 }
 
-div, h1 {
+div {
   //border: 1px solid white;
 }
 

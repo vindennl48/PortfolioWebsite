@@ -1,13 +1,27 @@
 // Big Screens > 1024px
 @media only screen and (min-width: 1024px) {
-  .slogan    { font-size: 1.5vw; }
+  .header {
+    padding-top:    10vh;
+    padding-bottom: 5vh;
+  }
+  .slogan    {
+    font-size: 1.5vw;
+    .pad-btm { padding-bottom: 0.5vw; }
+  }
   .icon      { font-size:   2vw; }
   .icon-pack { height:      3vw; }
 }
 
 // Small Screens < 1024px
 @media only screen and (max-width: 1024px) {
-  .slogan    { font-size:   3vw; }
-  .icon      { font-size: 3.5vw; }
-  .icon-pack { height:      6vw; }
+  .header {
+    padding-top:    2vh;
+    padding-bottom: 2vh;
+  }
+  .slogan    {
+    font-size:   3vw;
+    .pad-btm { padding-bottom: 1vw; }
+  }
+  .icon      { font-size: 4vw; }
+  .icon-pack { height:    6vw; }
 }
