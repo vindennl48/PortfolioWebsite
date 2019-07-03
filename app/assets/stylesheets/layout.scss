@@ -1,12 +1,27 @@
-.header, .slogan {
-  display:         grid;
-  justify-content: center;
-  text-align:      center;
-
+@mixin dont-select {
   -webkit-user-select: none; /* Safari 3.1+ */
   -moz-user-select:    none; /* Firefox 2+ */
   -ms-user-select:     none; /* IE 10+ */
   user-select:         none; /* Standard syntax */
+}
+
+.under-construction {
+  @include dont-select;
+
+  justify-self:     stretch;
+  align-self:       center;
+  font-size:        2vw;
+  text-align:       center;
+  background-color: $bg-dim;
+  padding:          2vw;
+}
+
+.header, .slogan {
+  @include dont-select;
+
+  display:         grid;
+  justify-content: center;
+  text-align:      center;
 }
 .header {
   font-size: 10vw;
@@ -38,7 +53,9 @@
   display:       grid;
   place-content: center;
 
-  .title {
+  .main-title {
+    @include dont-select;
+
     padding-bottom: 2vw;
     text-align:     center;
   }
