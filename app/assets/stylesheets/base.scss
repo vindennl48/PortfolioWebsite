@@ -1,16 +1,6 @@
 // BASE
 //////////////////////////////
 
-@font-face {
-  font-family: "Poppins";
-  src:         url(Poppins-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-ExtraLight";
-  src:         url(Poppins-ExtraLight.ttf) format("truetype");
-}
-
 html {
   box-sizing:  border-box;
   font-family: $font;
@@ -60,11 +50,16 @@ a {
 
 span {
   &.poppins {
-    font-family: 'Poppins', sans-serif;
+    font-family: $font;
     //font-weight: 400;
 
     &.light {
-      font-family: 'Poppins-ExtraLight', sans-serif;
+      font-family: $font-thin;
+      //font-weight: 200;
+    }
+
+    &.light-extra {
+      font-family: $font-extra-thin;
       //font-weight: 200;
     }
   }

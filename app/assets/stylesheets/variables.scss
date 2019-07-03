@@ -1,17 +1,34 @@
 // VARIABLES
 //////////////////////////////
 
-$font:           helvetica;
-$font-size:      16px;
+@font-face {
+  font-family: "Poppins";
+  src:         url(Poppins-Regular.ttf) format("truetype");
+}
 
-$font-color:     #ddd;
-$font-color-dim: #777;
-$link-color:     #6689ff;
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src:         url(Poppins-ExtraLight.ttf) format("truetype");
+}
 
-$bg-color:       #030303;
+@font-face {
+  font-family: "Poppins-Thin";
+  src:         url(Poppins-Thin.ttf) format("truetype");
+}
 
-$border-light:   #aaa;
-$focus-color:    blue;
+$font:            'Poppins',            Helvetica;
+$font-thin:       'Poppins-ExtraLight', Helvetica;
+$font-extra-thin: 'Poppins-Thin',       Helvetica;
+$font-size:       16px;
+
+$font-color:      #ddd;
+$font-color-dim:  #777;
+$link-color:      #6689ff;
+
+$bg-color:        #030303;
+
+$border-light:    #aaa;
+$focus-color:     blue;
 
 // -- Transitions --
-$TFade:          all 0.2s ease;
+$TFade:           all 0.2s ease;
