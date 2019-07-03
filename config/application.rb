@@ -14,6 +14,9 @@ module Portfolio
     # Generate *.js files instead of *.coffee files
     config.generators.javascript_engine = :js
 
+    # Pre-Compile fonts
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading

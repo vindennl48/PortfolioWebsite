@@ -1,13 +1,17 @@
 // VARIABLES
 //////////////////////////////
 
-$font:         helvetica;
-$font-size:    16px;
+$font:           helvetica;
+$font-size:      16px;
 
-$font-color:   #ddd;
-$link-color:   #6689ff;
+$font-color:     #ddd;
+$font-color-dim: #777;
+$link-color:     #6689ff;
 
-$bg-color:     #030303;
+$bg-color:       #030303;
 
-$border-light: #aaa;
-$focus-color:  blue;
+$border-light:   #aaa;
+$focus-color:    blue;
+
+// -- Transitions --
+$TFade:          all 0.2s ease;

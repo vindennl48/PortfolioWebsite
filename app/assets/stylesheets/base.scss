@@ -1,6 +1,16 @@
 // BASE
 //////////////////////////////
 
+@font-face {
+  font-family: "Poppins";
+  src:         url(Poppins-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src:         url(Poppins-ExtraLight.ttf) format("truetype");
+}
+
 html {
   box-sizing:  border-box;
   font-family: $font;
@@ -36,6 +46,10 @@ h2 { font-size: 24px;   }
 h3 { font-size: 18.7px; }
 h4 { font-size: 16px;   }
 
+hr {
+  border-color: $font-color-dim;
+}
+
 a {
   color: $link-color;
 
@@ -45,16 +59,13 @@ a {
 }
 
 span {
-  &.jumbo {
-    font-size: 10vw;
-  }
-
   &.poppins {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    //font-weight: 400;
 
     &.light {
-      font-weight: 200;
+      font-family: 'Poppins-ExtraLight', sans-serif;
+      //font-weight: 200;
     }
   }
 }
