@@ -15,7 +15,6 @@
 
 .slogan {
   color: $font-color-dim;
-  font-size: 1.5vw;
 }
 
 .space {
@@ -25,7 +24,6 @@
 }
 
 .icon {
-  font-size:  2vw;
   cursor:     pointer;
   transition: $TFade;
   color:      $font-color-dim;
@@ -40,8 +38,6 @@
 .icon-pack {
   display:         grid;
   grid-template:   1fr / repeat(auto-fit, minmax(10px, 1fr));
-  //grid-template:   1fr / 1fr 1fr 1fr;
   justify-content: center;
   align-items:     center;
-  height:          3vw;
 }
