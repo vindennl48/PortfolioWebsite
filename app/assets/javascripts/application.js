@@ -14,4 +14,5 @@
 //= require activestorage
 //= require turbolinks
 //= require anime.min
+//= require jquery3
 //= require_tree .
