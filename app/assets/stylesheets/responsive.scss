@@ -19,10 +19,15 @@
     .main-title { font-size: 5vw; }
 
     .project {
-      width: 60vw;
+      width:         60vw;
+      grid-template: 2.5vw 1fr 3vw / 2fr 3fr;
 
-      .title       { font-size: 2vw; }
-      .description { font-size: 1vw; }
+      .title       { font-size: 2vw;   }
+      .description {
+        font-size: 1.5vw;
+        ul { padding-left: 2.5vw; }
+      }
+      //.links       { font-size: 1.5vw; }
     }
   }
 }
@@ -49,10 +54,15 @@
     .main-title { font-size: 8vw; }
 
     .project {
-      width: 80vw;
+      width:         80vw;
+      grid-template: 4vw 3fr 1fr / 2fr 3fr;
 
       .title       { font-size: 3vw; }
-      .description { font-size: 2vw; }
+      .description {
+        font-size: 2vw;
+        ul { padding-left: 3.5vw; }
+      }
+      //.links       { font-size: 3vw; }
     }
   }
 }

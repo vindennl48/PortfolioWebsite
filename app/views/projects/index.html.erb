@@ -1,26 +1,28 @@
 <div class=" header ">
   <div>
-    <span class=" poppins light-extra ">{</span>
-    <span class=" poppins ">Mitch</span>
-    <span class=" poppins light ">Woodbine</span>
-    <span class=" poppins light-extra ">}</span>
+    <span class=" extra-thin ">{</span>Mitch
+    <span class=" thin ">Woodbine</span><span class=" extra-thin ">}</span>
   </div>
 </div>
 
 <div class=" slogan ">
 
   <div class=" title ">
-    <span class=" poppins light ">int developer = SOFTWARE | WEB | DESIGN;</span>
+    <span class=" blue ">int</span>
+    <span class=" yellow ">developer</span> =
+    <span class=" purple ">SOFTWARE</span> |
+    <span class=" purple ">WEB</span> |
+    <span class=" purple ">DESIGN</span>;
   </div>
 
   <hr></hr>
     <div class=" icon-pack ">
-      <div>
-        <a href="https://github.com/vindennl48" target="_blank">
-          <i class=" icon fab fa-github "></i>
-        </a>
-      </div>
-      <div><i class=" icon fab fa-linkedin "></i></div>
+      <a href="https://github.com/vindennl48" target="_blank">
+        <i class=" icon fab fa-github "></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mitchell-woodbine-7b5a86142/" target="_blank">
+        <i class=" icon fab fa-linkedin "></i>
+      </a>
       <div><i class=" icon fas fa-scroll "></i></div>
     </div>
   <hr></hr>
@@ -31,25 +33,45 @@
 
   <div class=" main-title ">Projects<hr/></div>
 
-  <div class=" project ">
-    <div class=" picture ">
-      <img src="https://boygeniusreport.files.wordpress.com/2016/11/puppy-dog.jpg?quality=98&strip=all"></img>
-    </div>
+  <% 2.times do %>
+    <div class=" project ">
+      <div class=" picture ">
+        <img src="https://boygeniusreport.files.wordpress.com/2016/11/puppy-dog.jpg?quality=98&strip=all"></img>
+      </div>
 
-    <div class=" title ">
-      This Portfolio Website
-    </div>
+      <div class=" title ">
+        This Portfolio Website
+      </div>
 
-    <div class=" description ">
-      <p>This site utilizes many technologies, some of which include: Ruby-On-Rails, Nginx+Passenger, </p>
-    </div>
+      <div class=" description ">
+        <p>Technologies include:</p>
+        <ul>
+          <li>Ruby-on-Rails / MVC</li>
+          <li>Postgresql</li>
+          <li>Devise & Google Auth API</li>
+          <li>Nginx & Passenger</li>
+          <li>Google Cloud - Compute Engine</li>
+          <a href="#">Read More</a>
+        </ul>
+      </div>
 
-    <div class=" links ">
-      <i class="far fa-eye"></i>
+      <div class=" links ">
+        <div></div>
+        <a href="#">
+          <i class=" icon fas fa-globe-americas "></i>
+        </a>
+        <a href="https://trello.com/b/WQPA8HBv/portfolio" target="_blank">
+          <i class=" icon fab fa-trello "></i>
+        </a>
+        <a href="https://github.com/vindennl48/portfolio" target="_blank">
+          <i class=" icon fas fa-code "></i>
+        </a>
+      </div>
     </div>
-  </div>
+  <% end %>
 
 </div>
+
 
 <!--
 <h1>Projects</h1>

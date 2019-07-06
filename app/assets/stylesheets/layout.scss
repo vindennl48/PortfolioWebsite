@@ -25,9 +25,17 @@
 }
 .header {
   font-size: 10vw;
+
+  span.thin       { font-family: $font-thin;       }
+  span.extra-thin { font-family: $font-extra-thin; }
 }
 .slogan {
   color: $font-color-dim;
+
+  .title {
+    color:       $font-color;
+    font-family: $font-thin;
+  }
 }
 
 .icon {
@@ -53,6 +61,8 @@
   display:       grid;
   place-content: center;
 
+  //div, img, p, i { border: 1px solid white; }
+
   .main-title {
     @include dont-select;
 
@@ -62,17 +72,15 @@
 
   .project {
     display:       grid;
-    //grid-template: 1fr 5fr 1fr / 2fr 3fr;
-    grid-template: 1fr 3fr 1fr / 2fr 3fr;
     place-content: stretch;
-    //border: 1px solid white;
+    margin-bottom: 3vw;
 
     .picture {
-      grid-row:    1 / 4;
-      grid-column: 1;
-      padding:     0.5vw;
-      display: grid;
-      place-content: stretch;
+      grid-row:      1 / 4;
+      grid-column:   1;
+      padding:       0.5vw;
+      display:       grid;
+      place-content: center;
 
       img { width: 100%; }
     }
@@ -83,22 +91,29 @@
       font-family: $font;
       color:       $font-color;
       text-align:  left;
-      //background-color: green;
+      border-bottom: 1px solid $font-color-dim;
     }
     .description {
-      grid-row:    2;
-      grid-column: 2;
-      padding:     0.5vw;
-      font-family: $font-thin;
-      color:       $font-color;
+      grid-row:           2;
+      grid-column:        2;
+      padding:            0.5vw;
+      font-family:        $font-thin;
+      color:              $font-color;
       //background-color: blue;
+      a {
+        display: inline-block;
+        padding-top: 1vw;
+      }
     }
     .links {
-      grid-row:    3;
-      grid-column: 2;
-      padding:     0.5vw;
-      font-family: $font-thin;
-      color:       $font-color;
+      grid-row:      3;
+      grid-column:   2;
+      display:       grid;
+      grid-template: 1fr / 3fr 1fr 1fr 1fr;
+      place-items:   center;
+      padding:       0.5vw;
+      //font-family:   $font-thin;
+      //color:         $font-color-dim;
     }
   }
 }

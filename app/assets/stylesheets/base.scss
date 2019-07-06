@@ -63,6 +63,9 @@ span {
       //font-weight: 200;
     }
   }
+  &.blue   { color: $font-color-blue;   }
+  &.yellow { color: $font-color-yellow; }
+  &.purple { color: $font-color-purple; }
 }
 
 table {

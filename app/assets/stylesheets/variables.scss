@@ -16,20 +16,23 @@
   src:         asset-url('Poppins-Thin.ttf') format("truetype");
 }
 
-$font:            'Poppins',            Helvetica;
-$font-thin:       'Poppins-ExtraLight', Helvetica;
-$font-extra-thin: 'Poppins-Thin',       Helvetica;
-$font-size:       16px;
+$font:              'Poppins',            Helvetica;
+$font-thin:         'Poppins-ExtraLight', Helvetica;
+$font-extra-thin:   'Poppins-Thin',       Helvetica;
+$font-size:         16px;
 
-$font-color:      #ddd;
-$font-color-dim:  #777;
-$link-color:      #6689ff;
+$font-color:        #ddd;
+$font-color-dim:    #777;
+$font-color-blue:   #4287f5;
+$font-color-yellow: #ded823;
+$font-color-purple: #de21d4;
+$link-color:        #6689ff;
 
-$bg-color:        #030303;
-$bg-dim:          #222;
+$bg-color:          #030303;
+$bg-dim:            #222;
 
-$border-light:    #aaa;
-$focus-color:     blue;
+$border-light:      #aaa;
+$focus-color:       blue;
 
 // -- Transitions --
-$TFade:           all 0.2s ease;
+$TFade:             all 0.2s ease;
