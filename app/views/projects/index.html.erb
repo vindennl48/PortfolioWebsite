@@ -1,8 +1,11 @@
 <div class=" header ">
-  <div>
-    <span class=" extra-thin ">{</span>Mitch
-    <span class=" thin ">Woodbine</span><span class=" extra-thin ">}</span>
+  <div class=" text ">
+    {Mitch Woodbine}
   </div>
+  <%#<div>%>
+    <%#<span class=" extra-thin ">{</span>Mitch%>
+    <%#<span class=" thin ">Woodbine</span><span class=" extra-thin ">}</span>%>
+  <%#</div>%>
 </div>
 
 <div class=" slogan ">
@@ -98,3 +101,17 @@
 
 <%= link_to 'New Project', new_project_path %>
 -->
+
+<script>
+  $('.header .text').each(function(){
+    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline()
+    .add({
+      targets:  '.header',
+      scaleY:   [0,1],
+      opacity:  [0.5,1],
+      easing:   "easeOutExpo",
+      duration: 700
+    })
+</script>
