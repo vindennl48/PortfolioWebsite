@@ -17,6 +17,9 @@ module Portfolio
     # Pre-Compile fonts
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
+    # Use gzip compression
+    config.middleware.insert_before(Rack::Sendfile, Rack::Deflater)
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
