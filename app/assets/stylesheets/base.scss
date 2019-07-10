@@ -27,14 +27,27 @@ div {
   //border: 1px solid white;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,h5,h6 {
   font-family: $font;
   display:     inline;
+  font-weight: 400;
 }
-h1 { font-size: 32px;   }
-h2 { font-size: 24px;   }
-h3 { font-size: 18.7px; }
-h4 { font-size: 16px;   }
+h1 { font-size: 10vw; }
+h2 { font-size:  8vw; }
+h3 { font-size:  6vw; }
+h4 { font-size:  5vw; }
+h5 { font-size:  3vw; }
+h6 { font-size:  2vw; }
+
+p,ul {
+  font-family: $font-thin;
+  font-size:   1.6vw;
+  display:     inline;
+}
+
+ul {
+  display: inline-block;
+}
 
 hr {
   border-color: $font-color-dim;
@@ -49,20 +62,11 @@ a {
 }
 
 span {
-  &.poppins {
-    font-family: $font;
-    //font-weight: 400;
+  // Fonts
+  &.thin       { font-family: $font-thin;       }
+  &.extra-thin { font-family: $font-extra-thin; }
 
-    &.light {
-      font-family: $font-thin;
-      //font-weight: 200;
-    }
-
-    &.light-extra {
-      font-family: $font-extra-thin;
-      //font-weight: 200;
-    }
-  }
+  // Colors
   &.blue   { color: $font-color-blue;   }
   &.yellow { color: $font-color-yellow; }
   &.purple { color: $font-color-purple; }
@@ -169,4 +173,27 @@ pre {
 #notice {
   color:      #32592d;
   text-align: center;
+}
+
+
+// RESPONSIVE
+//////////////////////////////////////////////////
+
+// Small Screens < 1024px
+@media only screen and (max-width: 1024px) {
+  p,ul { font-size: 14pt;   }
+}
+
+// Small Screens < px
+@media only screen and (max-width: 690px) {
+  h5 { font-size: 15.5pt; }
+  h6 { font-size: 15pt;   }
+}
+
+// Small Screens < 430px
+@media only screen and (max-width: 430px) {
+  h1 { font-size: 32pt;   }
+  h2 { font-size: 25.5pt; }
+  h3 { font-size: 19.2pt; }
+  h4 { font-size: 16pt;   }
 }

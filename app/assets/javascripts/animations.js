@@ -9,9 +9,8 @@ function vw(v) {
 }
 
 function runAtStart() {
-  $('.header .text span').each(function(){
+  $('.header h1 span').each(function(){
     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-    //$(this).html($(this).text().replace(/([^a-z,A-Z]|\w)/g, "<span class='letter'>$&</span>"));
   });
   anime.timeline()
     .add({
